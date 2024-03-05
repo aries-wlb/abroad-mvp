@@ -1,0 +1,4 @@
+# better use prettier@2.4.1 or above
+singleQuote: true
+semi: false
+arrowParens: avoid

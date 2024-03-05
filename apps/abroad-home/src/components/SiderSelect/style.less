@@ -1,0 +1,34 @@
+.sider-select {
+  margin-left: 60px;
+  .sider-select-item {
+    cursor: pointer;
+    .sider-select-item-text {
+      font-size: 16px;
+      position: relative;
+      color: #c3c3c3;
+      transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), margin 0.3s,
+        color 0.3s;
+      &::before {
+        content: ' ';
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 3px;
+        background: #5888ce;
+        left: -24px;
+        opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+          margin 0.3s, color 0.3s;
+      }
+      &.active,
+      &:hover {
+        color: black;
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+    line-height: 50px;
+  }
+}

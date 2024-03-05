@@ -13,6 +13,10 @@
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
+  "resolutions": {
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.14"
+  },
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"

@@ -1,0 +1,64 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .ant-upload {
+    width: 100%;
+  }
+  .form-inline-item {
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.form-container > .ant-form {
+  flex: 1;
+  overflow: auto;
+}
+
+.form-ant-file-container {
+  position: relative;
+  height: 22px;
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    .file-delete {
+      opacity: 1;
+    }
+  }
+
+  .anticon {
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .file-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 8px;
+    // line-height: 1.5714285714285714;
+    flex: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .file-delete {
+    opacity: 0;
+    width: 24px;
+    height: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+    justify-content: center;
+    border-radius: 4px;
+    &:hover {
+      color: rgba(0, 0, 0, 0.88);
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+  }
+}

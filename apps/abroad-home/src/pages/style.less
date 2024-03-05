@@ -1,0 +1,43 @@
+.patrick-layout {
+  font-family: 'Quicksand-Regular';
+  background: white;
+  .layout-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.5);
+    .patrick-logo {
+      width: 300px;
+    }
+  }
+
+  .layout-content {
+    position: relative;
+    flex: 1;
+    overflow: auto;
+    background: white;
+    .root-breadcrmb-container {
+      padding: 8px 96px;
+      display: none;
+    }
+    .layout-content-spin {
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+    }
+  }
+
+  .layout-footer {
+    background: white;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 24px 50px;
+  }
+}

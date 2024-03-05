@@ -1,0 +1,68 @@
+.apply-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  .apply-header {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 28px;
+  }
+  .apply-body {
+    flex: 1;
+    overflow: hidden;
+    .ant-layout-content {
+      overflow: auto;
+      .my-application {
+        text-align: left;
+      }
+    }
+  }
+}
+.ant-modal {
+  .progress-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    .ant-result {
+      height: 100%;
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .progress-content {
+      margin-top: 36px;
+      .ant-steps {
+        height: 100%;
+      }
+    }
+  }
+}
+.info-container {
+  margin-top: 50px;
+  position: relative;
+  height: calc(100% - 50px);
+  padding: 16px;
+  padding-top: 90px;
+  background: linear-gradient(#fffce3, #ffffff);
+  border-radius: 5%;
+  .text-title {
+    font-size: 20px;
+    font-family: Quicksand-Bold;
+  }
+  .basic {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b57d7d;
+  }
+  .content {
+    text-align: left;
+  }
+}
